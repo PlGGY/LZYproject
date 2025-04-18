@@ -12,7 +12,7 @@ my_model_path = os.path.join(script_dir, "model.pkl")
 print(my_data_path)
 print(my_model_path)
 
-titanic_input_data = pd.read_csv(my_data_path)
+titanic_input_data = pd.read_csv(titanic_input_data.csv)
 
 print(titanic_input_data.head())
 
