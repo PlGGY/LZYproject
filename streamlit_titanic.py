@@ -5,14 +5,14 @@ import os
 
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-my_data_path = os.path.join(script_dir, "my_data_path")
+my_data_path = os.path.join(script_dir, "titanic_input_data.csv")
 my_model_path = os.path.join(script_dir, "model.pkl")
 
 # Verify the correct loads
 print(my_data_path)
 print(my_model_path)
 
-titanic_input_data = pd.read_csv('titanic_input_data.csv')
+titanic_input_data = pd.read_csv(my_data_path)
 
 print(titanic_input_data.head())
 
